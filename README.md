@@ -11,7 +11,7 @@ This project demonstrates how AI (ChatGPT) can be used to generate test cases an
 
 The application allows users to log in, view products, and manage items in the cart.
 
-### Functional Flow:
+## Functional Flow:
 - User logs into the application
 - User is navigated to product listing page
 - User adds products to cart
@@ -20,7 +20,7 @@ The application allows users to log in, view products, and manage items in the c
 - Cart count decreases
 - User views products in cart
 
-### Validations:
+## Validations:
 - Login validation (valid, invalid, empty)
 - Product list visibility
 - Cart count updates correctly
@@ -30,15 +30,47 @@ The application allows users to log in, view products, and manage items in the c
 
 ## Prompt Used:
 
-Generate Playwright test scripts for an e-commerce product and cart management feature.
+Act as an experienced Senior QA Automation Engineer with strong expertise in test design, Playwright automation, and e-commerce applications.
 
-Requirements:
-- Include login validation
-- Include positive, negative, and edge test scenarios
-- Cover add/remove cart functionality
-- Use JavaScript with Playwright
-- Include assertions
-- Follow best practices
+Application Context:
+You are testing a demo e-commerce web application (SauceDemo) that includes user authentication, product listing, and cart management functionality.
+
+Objective:
+Generate comprehensive test cases and Playwright automation scripts based on the feature description provided.
+
+Feature Scope:
+Product and Cart Management:
+
+* User login (valid, invalid, empty credentials)
+* Viewing product list
+* Adding single and multiple products to cart
+* Removing products from cart
+* Viewing cart items
+* Cart persistence across navigation and logout
+
+Instructions:
+
+1. Generate detailed test cases covering:
+
+   * Positive scenarios
+   * Negative scenarios
+   * Edge cases
+2. Ensure test cases reflect real-world QA thinking and cover boundary conditions.
+3. Convert the test cases into Playwright test scripts using JavaScript.
+4. Use best practices:
+
+   * Proper selectors
+   * Clear test structure
+   * Meaningful test names
+   * Assertions using expect()
+5. Ensure scripts are executable and aligned with actual application behavior.
+6. Avoid unsupported assumptions (e.g., features not present in SauceDemo).
+
+Output Format:
+
+* Section 1: Test Cases (BDD format)
+* Section 2: Playwright Test Scripts
+* Ensure clarity, readability, and maintainability of code.
 
 ---
 
